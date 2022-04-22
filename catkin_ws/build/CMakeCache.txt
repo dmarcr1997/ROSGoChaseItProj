@@ -262,6 +262,9 @@ _gtest_INCLUDES:FILEPATH=/usr/include/gtest/gtest.h
 //Path to a file.
 _gtest_SOURCES:FILEPATH=/usr/src/gtest/src/gtest.cc
 
+//The directory containing a CMake configuration file for add_service_files.
+add_service_files_DIR:PATH=add_service_files_DIR-NOTFOUND
+
 //Value Computed by CMake
 ball_chaser_BINARY_DIR:STATIC=/home/workspace/catkin_ws/build/ball_chaser
 
@@ -331,6 +334,9 @@ gtest_force_shared_crt:BOOL=OFF
 
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
+
+//The directory containing a CMake configuration file for include_directories.
+include_directories_DIR:PATH=include_directories_DIR-NOTFOUND
 
 //Path to a library.
 lib:FILEPATH=/opt/ros/kinetic/lib/libxmlrpcpp.so
