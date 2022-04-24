@@ -209,3 +209,9 @@ add_dependencies(drive_bot drive_bot_generated_messages_cpp)
 target_link_libraries(drive_bot
   ${catkin_LIBRARIES}
 )
+
+add_executable(process_image src/process_image.cpp)
+add_dependencies(process_image process_image_generated_messages_cpp)
+target_link_libraries(process_image
+  ${catkin_LIBRARIES}
+)
